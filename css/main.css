@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+  font-style: normal;
+}
+p {
+  font-size: 1rem; /*16px*/
+}
+body {
+  min-height: 100vh;
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  max-width: 20.438rem; /*327px*/
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.25rem; /*20px*/
+  box-shadow: 8px 8px 0px hsl(0, 0%, 7%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem; /*24px*/
+  border: 1px solid hsl(0, 0%, 7%);
+}
+
+.illustration-article-image {
+  display: block;
+  width: 100%;
+  max-width: 17.438rem; /* 279px */
+  height: auto;
+  border-radius: 0.625rem; /* 10px */
+  margin-bottom: 1.5rem; /*24px*/
+}
+.btn-learning {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: hsl(47, 88%, 63%);
+  border: none;
+  border-radius: 0.25rem; /*4px*/
+  font-size: 0.75rem; /*12px*/
+  font-weight: 800;
+  margin-bottom: 0.75rem; /*12px*/
+  cursor: pointer;
+}
+.date-of-publishing {
+  font-weight: 500;
+  font-size: 0.75rem; /*12px*/
+  margin-bottom: 0.75rem; /*12px*/
+  color: hsl(0, 0%, 7%);
+}
+.main-header-of-the-page {
+  font-weight: 800;
+  font-size: 1.25rem; /*20px*/
+  margin-bottom: 0.75rem; /*12px*/
+  color: hsl(0, 0%, 7%);
+  transition: color ease-in-out 0.5s;
+}
+.main-header-of-the-page:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.page-description {
+  font-weight: 500;
+  font-size: 0.875rem; /*14px*/
+  color: hsl(0, 0%, 42%);
+  margin-bottom: 1.5rem; /*24px*/
+  line-height: 21px;
+}
+
+.info-about-creator-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.img-of-Greg-Hooper {
+  margin-right: 0.75rem; /*12px*/
+  display: block;
+  width: 100%;
+  max-width: 2rem; /* 31px */
+  height: auto;
+}
+.creator-name {
+  font-weight: 800;
+  font-size: 14px;
+  color: hsl(0, 0%, 7%);
+}
+
+@media (min-width: 23.438rem) {
+  /*375px*/
+  main {
+    max-width: 384px;
+    border-radius: 1.25rem;
+  }
+  .illustration-article-image {
+    max-width: 336px;
+  }
+
+  .date-of-publishing {
+    font-size: 14px;
+  }
+  .main-header-of-the-page {
+    font-size: 24px;
+  }
+  .page-description {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+  }
+}
